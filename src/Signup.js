@@ -1,8 +1,7 @@
 import "./App.css";
 import RegisterNav from "./registerNav";
-import { Link } from "react-router-dom";
 
-function Login() {
+function Signup() {
   return (
     <>
       <RegisterNav />
@@ -11,15 +10,12 @@ function Login() {
         <input></input>
         <label>Password</label>
         <input type="password"></input>
-        <p>
-          <Link className="orange" to="/forgotpassword">
-            Forgot password
-          </Link>
-        </p>
-        <button>Login</button>
+        <label>Name</label>
+        <input></input>
+        <button>Sign up</button>
       </form>
     </>
   );
 }
 
-export default Login;
+export default Signup;

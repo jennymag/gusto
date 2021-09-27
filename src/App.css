@@ -9,22 +9,21 @@ body {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 img {
-  width: 70%;
+  width: 50%;
 }
 .logoContainer {
   display: flex;
   justify-content: center;
-  margin: 90px;
-}
-
-.flexContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin: 80px;
 }
 
 ul {
@@ -34,22 +33,29 @@ ul {
 
 li {
   display: inline;
-  margin: 30px;
-  font-size: 18px;
-  padding: 0px 30px 0px 30px;
+  font-size: 20px;
+  padding: 70px;
 }
 
-.logInLink {
-  padding: 0px 40px 0px 40px;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-li:hover {
+.orange {
+  color: #fa4a0c;
+}
+
+a:focus {
   border-bottom: 3px solid #fa4a0c;
   padding-bottom: 10px;
 }
 
 form {
-  padding: 60px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 30px;
 }
 
 input {
@@ -58,8 +64,8 @@ input {
   border-right: 0;
   border-top: 0;
   border-left: 0;
-  margin: 0px 20px 50px 20px;
-  padding: 10px;
+  margin: 0px 20px 40px 20px;
+  padding: 5px;
   font-size: 17px;
   letter-spacing: 2px;
 }
@@ -74,9 +80,11 @@ label {
 }
 
 p {
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: bold;
   color: #fa4a0c;
   margin-left: 20px;
+  margin-top: -10px;
 }
 
 button {
@@ -85,7 +93,7 @@ button {
   border-radius: 30px;
   font-size: 20px;
   padding: 20px;
-  width: 314px;
+  width: 300px;
   border: none;
-  margin-top: 50px;
+  margin: 20px;
 }
