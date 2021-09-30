@@ -27,6 +27,20 @@
     <title>React App</title>
   </head>
   <body>
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyCA3gQIdetX9Qx9JP1f123wl2q9KyvYLv0",
+        authDomain: "gusto-d3992.firebaseapp.com",
+        projectId: "gusto-d3992",
+        storageBucket: "gusto-d3992.appspot.com",
+        messagingSenderId: "564419429514",
+        appId: "1:564419429514:web:57963f5c690e2928b8d973",
+        measurementId: "G-J31VSRGF9L",
+      };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

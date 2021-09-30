@@ -8,7 +8,7 @@ body {
   background: #f2f2f2;
 }
 
-nav {
+.nonAuthNav {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,23 +18,34 @@ nav {
 }
 
 img {
-  width: 50%;
+  width: 30%;
 }
+
+.flexCenter {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 12px;
+}
+
 .logoContainer {
   display: flex;
   justify-content: center;
-  margin: 80px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 ul {
+  min-width: 100%;
   list-style-type: none;
-  padding-bottom: 10px;
 }
 
 li {
   display: inline;
   font-size: 20px;
-  padding: 70px;
+}
+
+.backArrow {
+  font-size: 40px;
 }
 
 a {
