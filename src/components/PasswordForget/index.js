@@ -50,9 +50,11 @@ class PasswordForgetFormBase extends Component {
           type="text"
           placeholder="Email Address"
         />
-        <button disabled={isInvalid} type="submit">
-          Reset My Password
-        </button>
+        <div className="flexCenter">
+          <button disabled={isInvalid} type="submit">
+            Reset My Password
+          </button>
+        </div>
         {error && <p>{error.message}</p>}
       </form>
     );

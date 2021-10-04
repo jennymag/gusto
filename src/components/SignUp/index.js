@@ -93,10 +93,11 @@ class SignUpFormBase extends Component {
           type="password"
           placeholder="Confirm Password"
         />
-        <button disabled={isInvalid} type="submit">
-          Sign Up
-        </button>
-
+        <div className="flexCenter">
+          <button disabled={isInvalid} type="submit">
+            Sign Up
+          </button>
+        </div>
         {error && <p>{error.message}</p>}
       </form>
     );

@@ -15,7 +15,7 @@ const OnboardingLayout = ({ children }) => (
 const SignInPage = () => (
   <OnboardingLayout>
     <SignInForm />
-    <PasswordForgetLink />
+
     {/*    <SignUpLink /> */}
   </OnboardingLayout>
 );
@@ -60,9 +60,12 @@ class SignInFormBase extends Component {
           type="password"
           placeholder="Password"
         />
-        <button disabled={isInvalid} type="submit">
-          Sign In
-        </button>
+        <PasswordForgetLink />
+        <div className="flexCenter">
+          <button disabled={isInvalid} type="submit">
+            Sign In
+          </button>
+        </div>
         {error && <p>{error.message}</p>}
       </form>
     );

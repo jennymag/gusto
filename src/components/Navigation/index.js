@@ -32,14 +32,14 @@ const NavigationAuth = () => (
 const NavigationNonAuth = () => (
   <nav className="nonAuthNav">
     <ul>
-      <li>
+      <li className="backArrow">
         <Link className="backArrow" to={ROUTES.LANDING}>
-          {"<"}
+          &#8592;
         </Link>
       </li>
       <li>
         <div className="logoContainer">
-          <img src={logo} />
+          <img src={logo} alt="logo" className="mediumLogo" />
         </div>
       </li>
       <div className="flexCenter">
