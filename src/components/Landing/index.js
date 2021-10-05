@@ -11,8 +11,8 @@ const Landing = () => (
       </div>
     </header>
     <section className="landingSection">
-      <h1 className="onboardingH1">Gusto</h1>
-      <h2 className="onboardingH2">
+      <h1 className="landingH1">Gusto</h1>
+      <h2 className="landingH2">
         One third of all food is wasted. Cook with Gusto and become the hero
       </h2>
       <Link to={ROUTES.SIGN_IN}>

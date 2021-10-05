@@ -14,20 +14,25 @@ const Navigation = () => (
 );
 
 const NavigationAuth = () => (
-  <ul>
-    <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+  <nav className="authNav">
+    <ul>
+      <li>
+        <Link to={ROUTES.ONBOARDING}>Onboarding</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.HOME}>Recipes</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.PANTRY}>Pantry</Link>
+      </li>
+      <li>
+        <Link to={ROUTES.ACCOUNT}>Profile</Link>
+      </li>
+      <li>
+        <SignOutButton />
+      </li>
+    </ul>
+  </nav>
 );
 const NavigationNonAuth = () => (
   <nav className="nonAuthNav">

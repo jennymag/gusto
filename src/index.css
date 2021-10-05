@@ -41,7 +41,7 @@ body {
   padding: 0px 80px 0px 80px;
 }
 
-.onboardingH1 {
+.landingH1 {
   color: white;
   font-size: 65px;
   text-transform: uppercase;
@@ -49,11 +49,55 @@ body {
   padding: 15px;
 }
 
-.onboardingH2 {
+.landingH2 {
   color: white;
   font-size: 24px;
   padding: 15px;
   text-align: center;
+}
+
+.onboardingH1 {
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.onboardingH2 {
+  color: white;
+  font-size: 50px;
+  padding: 15px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 60px 0 70px 0;
+}
+
+.onboardingP {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  margin-top: 20px;
+  width: 70%;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.html {
+  width: 60%;
+  background-color: #50da0f;
 }
 
 .nonAuthNav {
@@ -63,6 +107,14 @@ body {
   background: #fff;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+.onboardingBackground {
+  height: 100%;
+  background-image: url(./pictures/mae-mu-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*https://unsplash.com/photos/s6S8IgEN6-4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
 }
 
 .mediumLogo {
