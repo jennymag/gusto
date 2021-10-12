@@ -2,15 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withFirebase } from "../Firebase";
 import * as ROUTES from "../../constants/routes";
-
-import Navigation from "../Navigation";
-
-const OnboardingLayout = ({ children }) => (
-  <div>
-    <Navigation />
-    {children}
-  </div>
-);
+import { OnboardingLayout } from "../Navigation/OnboardingLayout";
 
 const PasswordForgetPage = () => (
   <OnboardingLayout>

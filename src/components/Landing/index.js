@@ -1,14 +1,12 @@
 import React from "react";
 import * as ROUTES from "../../constants/routes";
 import { Link } from "react-router-dom";
-import logo from "../../pictures/logo.png";
+import LogoCircle from "../Navigation/LogoCircle";
 
 const Landing = () => (
   <div className="landingBackground">
     <header className="landingHeader">
-      <div className="circle">
-        <img src={logo} alt="logo" className="smallLogo" />
-      </div>
+      <LogoCircle />
     </header>
     <section className="landingSection">
       <h1 className="landingH1">Gusto</h1>

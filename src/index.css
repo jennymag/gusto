@@ -11,7 +11,7 @@ body,
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #f2f2f2;
+  background: #f5f5f8;
 }
 
 .landingBackground {
@@ -117,11 +117,11 @@ body {
   /*https://unsplash.com/photos/s6S8IgEN6-4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
 }
 
-.mediumLogo {
+.bigLogo {
   width: 30%;
 }
 
-.smallLogo {
+.logo {
   width: 50%;
   padding: 20px;
 }
@@ -223,4 +223,102 @@ button {
   padding: 20px;
   width: 300px;
   border: none;
+}
+
+.pantryH1 {
+  font-size: 34px;
+  padding: 0 0 30px 70px;
+}
+
+.pantryP {
+  color: #000;
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 100px;
+}
+
+.pantryHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.searchField {
+  background: #efeeee;
+  border-radius: 30px;
+  color: #78777877;
+  letter-spacing: normal;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  text-align: center;
+  padding: 10px 70px 10px 70px;
+  width: 250px;
+}
+
+.searchField:focus {
+  color: #000;
+}
+
+.categoryList {
+  display: flex;
+  justify-content: space-around;
+  font-size: 17px;
+  color: #9a9a9d;
+}
+
+.foodCard {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 20px;
+
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.foodH1 {
+  font-size: 40px;
+}
+
+.foodH2 {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+.foodP {
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+.addBtn {
+  text-align: center;
+  background: #b2b2b4;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  color: #59595a;
+  font-size: 40px;
+}
+
+.removeBtn {
+  text-align: center;
+  background: #26cd5f;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 40px;
+}
+
+.active {
+  color: #fa4a0c;
+  border-bottom: 3px solid #fa4a0c;
 }

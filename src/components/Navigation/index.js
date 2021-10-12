@@ -17,9 +17,6 @@ const NavigationAuth = () => (
   <nav className="authNav">
     <ul>
       <li>
-        <Link to={ROUTES.ONBOARDING}>Onboarding</Link>
-      </li>
-      <li>
         <Link to={ROUTES.HOME}>Recipes</Link>
       </li>
       <li>
@@ -44,7 +41,7 @@ const NavigationNonAuth = () => (
       </li>
       <li>
         <div className="logoContainer">
-          <img src={logo} alt="logo" className="mediumLogo" />
+          <img src={logo} alt="logo" className="bigLogo" />
         </div>
       </li>
       <div className="flexCenter">

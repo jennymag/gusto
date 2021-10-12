@@ -1,23 +1,16 @@
 import React from "react";
 import { AuthUserContext, withAuthorization } from "../Session";
-import { PasswordForgetForm } from "../PasswordForget";
-import PasswordChangeForm from "../PasswordChange";
-import Navigation from "../Navigation";
 
-const OnboardingLayout = ({ children }) => (
-  <OnboardingLayout>
-    <Navigation />
-    {children}
-  </OnboardingLayout>
-);
+import PasswordChangeForm from "../PasswordChange";
+import { OnboardingLayout } from "../Navigation/OnboardingLayout";
 
 const AccountPage = () => (
   <AuthUserContext.Consumer>
     {(authUser) => (
-      <div>
+      <OnboardingLayout>
         <h1>Account: {authUser.email}</h1>
         <PasswordChangeForm />
-      </div>
+      </OnboardingLayout>
     )}
   </AuthUserContext.Consumer>
 );

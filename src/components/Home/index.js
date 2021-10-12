@@ -1,13 +1,6 @@
 import React from "react";
 import { withAuthorization } from "../Session";
-import Navigation from "../Navigation";
-
-const OnboardingLayout = ({ children }) => (
-  <div>
-    <Navigation />
-    {children}
-  </div>
-);
+import { OnboardingLayout } from "../Navigation/OnboardingLayout";
 
 const HomePage = () => (
   <OnboardingLayout>
