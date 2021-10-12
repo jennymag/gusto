@@ -6,6 +6,7 @@ import LogoCircle from "../Navigation/LogoCircle";
 import foodData from "../AddIngredients/foodData";
 import * as ROUTES from "../../constants/routes";
 import FoodCard from "./FoodCard";
+import scan from "../../pictures/scan.png";
 
 const PantryPage = () => {
   const [activeCategory, setActiveCategory] = useState();
@@ -41,7 +42,7 @@ const PantryPage = () => {
         onFocus={(e) => (e.target.placeholder = "")}
         onBlur={(e) => (e.target.placeholder = "Search ingredient to add")}
       />
-      <img src="" alt="b" />
+      <img src={scan} className="scan" alt="scan barcode" />
       <nav className="categoryNav">
         <ul className="categoryList">
           <li

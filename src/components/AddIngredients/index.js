@@ -5,7 +5,7 @@ import { OnboardingLayout } from "../Navigation/OnboardingLayout";
 import LogoCircle from "../Navigation/LogoCircle";
 import foodData from "./foodData";
 import FoodCard from "../Pantry/FoodCard";
-
+import scan from "../../pictures/scan.png";
 import * as ROUTES from "../../constants/routes";
 
 const AddIngredientsPage = () => {
@@ -27,10 +27,12 @@ const AddIngredientsPage = () => {
         onFocus={(e) => (e.target.placeholder = "")}
         onBlur={(e) => (e.target.placeholder = "Search ingredient to add")}
       />
-      <img src="" alt="b" />
+      <img src={scan} className="scan" alt="scan barcode" />
       <section className="pantrySection">
         {foodData
-          .filter((food) => food.title.includes(searchTerm))
+          .filter((food) =>
+            food.title.toLowerCase().includes(searchTerm.toLowerCase())
+          )
           .map((food) => (
             <FoodCard food={food} />
           ))}

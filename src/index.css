@@ -270,55 +270,66 @@ button {
 
 .foodCard {
   display: flex;
-  justify-content: space-around;
   padding: 20px;
   margin: 20px;
-
   background: rgba(255, 255, 255, 0.45);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
-.foodH1 {
+.foodAvatar {
   font-size: 40px;
+  margin: 20px 80px 0 80px;
 }
 
 .foodH2 {
+  margin: 10px 0 0 0;
+  padding: 7px;
   color: black;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 25px;
   font-weight: lighter;
 }
 
 .foodP {
+  margin: 0;
+  padding: 7px;
   color: black;
   font-size: 15px;
-  padding: 10px;
   font-weight: lighter;
 }
 
-.addBtn {
-  text-align: center;
-  background: #b2b2b4;
+.foodInfo {
+  width: 300px;
+}
+
+.foodBtn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-
-  color: #59595a;
   font-size: 40px;
 }
 
+.addBtn {
+  background: #b2b2b4;
+  color: #59595a;
+}
+
 .removeBtn {
-  text-align: center;
   background: #26cd5f;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
   color: #fff;
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .active {
   color: #fa4a0c;
   border-bottom: 3px solid #fa4a0c;
+}
+
+.scan {
+  width: 5%;
 }
