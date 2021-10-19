@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { withAuthorization } from "../Session";
 import { OnboardingLayout } from "../Navigation/OnboardingLayout";
@@ -7,8 +7,10 @@ import foodData from "./foodData";
 import FoodCard from "../Pantry/FoodCard";
 import scan from "../../pictures/scan.png";
 import * as ROUTES from "../../constants/routes";
+import { PantryContext } from "../App/PantryContext";
 
 const AddIngredientsPage = () => {
+  const { pantry, createTogglePantryStatus } = useContext(PantryContext);
   const [searchTerm, setSearchTerm] = useState("");
   function searchIngredient(event) {
     setSearchTerm(event.target.value);
@@ -34,7 +36,11 @@ const AddIngredientsPage = () => {
             food.title.toLowerCase().includes(searchTerm.toLowerCase())
           )
           .map((food) => (
-            <FoodCard food={food} />
+            <FoodCard
+              food={food}
+              inPantry={pantry.includes(food.id)}
+              togglePantryStatus={createTogglePantryStatus(food.id)}
+            />
           ))}
 
         <Link to={ROUTES.PANTRY}>

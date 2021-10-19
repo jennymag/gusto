@@ -1,21 +1,8 @@
 import React, { useState } from "react";
 
-const FoodCard = ({ food }) => {
-  const [activeToggleBtn, setActiveToggleBtn] = useState(false);
-  //const [foodKey, setFoodKey] = useState(undefined);
-
-  function toggleButton(event) {
-    console.log(event.currentTarget.parentElement.dataset.index);
-    //event.target.parentElement);
-    //setFoodKey("");
-    if (activeToggleBtn === false) {
-      setActiveToggleBtn(true);
-    } else {
-      setActiveToggleBtn(false);
-    }
-  }
+const FoodCard = ({ food, inPantry, togglePantryStatus }) => {
   return (
-    <div className="foodCard" key={food.id} data-index={food.id}>
+    <div className="foodCard" key={food.id}>
       <h1 className="foodAvatar">{food.img}</h1>
 
       <div className="foodInfo">
@@ -24,12 +11,10 @@ const FoodCard = ({ food }) => {
       </div>
       <div>
         <button
-          onClick={toggleButton}
-          className={
-            activeToggleBtn === false ? "addBtn foodBtn" : "removeBtn foodBtn"
-          }
+          onClick={togglePantryStatus}
+          className={inPantry ? "removeBtn foodBtn" : "addBtn foodBtn"}
         >
-          {activeToggleBtn === false ? "+" : "✔︎"}
+          {inPantry ? "✔︎" : "+"}
         </button>
       </div>
     </div>

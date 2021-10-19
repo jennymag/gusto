@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { withAuthorization } from "../Session";
 import { OnboardingLayout } from "../Navigation/OnboardingLayout";
@@ -7,13 +7,16 @@ import foodData from "../AddIngredients/foodData";
 import * as ROUTES from "../../constants/routes";
 import FoodCard from "./FoodCard";
 import scan from "../../pictures/scan.png";
+import { PantryContext } from "../App/PantryContext";
 
 const PantryPage = () => {
+  const { pantry, createTogglePantryStatus } = useContext(PantryContext);
   const [activeCategory, setActiveCategory] = useState();
   let history = useHistory();
   function searchForIngredients() {
     history.push(ROUTES.ADD_INGREDIENTS);
   }
+
   function changeColor(e) {
     let index = e.target.innerText;
     if (index === "All") {
@@ -39,8 +42,6 @@ const PantryPage = () => {
         onClick={searchForIngredients}
         className="searchField"
         placeholder="Search ingredients to add"
-        onFocus={(e) => (e.target.placeholder = "")}
-        onBlur={(e) => (e.target.placeholder = "Search ingredient to add")}
       />
       <img src={scan} className="scan" alt="scan barcode" />
       <nav className="categoryNav">
@@ -73,9 +74,15 @@ const PantryPage = () => {
       </nav>
       <section className="pantrySection">
         {filteredFood.map((food) =>
-          food.isAdded ? <FoodCard food={food} /> : null
+          pantry.includes(food.id) ? (
+            <FoodCard
+              food={food}
+              inPantry={pantry.includes(food.id)}
+              togglePantryStatus={createTogglePantryStatus(food.id)}
+            />
+          ) : null
         )}
-        {!foodData.some((i) => i.isAdded) ? (
+        {pantry.length === 0 ? (
           <p class="pantryP">
             Your pantry is empty. Add ingredients by searching or scanning it's
             barcode.
