@@ -41,6 +41,77 @@ const foodData = [
     id: 7,
     img: "🥩",
   },
+  {
+    title: "Potato",
+    category: "Fridge",
+    id: 8,
+    img: "🥔",
+  },
+  {
+    title: "Mushroom",
+    category: "Fridge",
+    id: 9,
+    img: "🍄",
+  },
+  {
+    title: "Oil",
+    category: "Fridge",
+    id: 10,
+    img: "🛢",
+  },
+  {
+    title: "Garlic",
+    category: "Fridge",
+    id: 11,
+    img: "🧄",
+  },
+  {
+    title: "Salt",
+    category: "Dry foods",
+    id: 12,
+    img: "🧂",
+  },
+  {
+    title: "Pepper",
+    category: "Dry foods",
+    id: 13,
+    img: "🧂",
+  },
+  {
+    title: "Corn starch",
+    category: "Dry foods",
+    id: 14,
+    img: "🌽",
+  },
+  {
+    title: "Cooking cream",
+    category: "Fridge",
+    id: 15,
+    img: "🍶",
+  },
+  {
+    title: "Coconut",
+    category: "Dry foods",
+    id: 16,
+    img: "🥥",
+  },
+  {
+    title: "Chicken broth",
+    category: "Fridge",
+    id: 17,
+    img: "🍗",
+  },
+  {
+    title: "Butter",
+    category: "Fridge",
+    id: 18,
+    img: "🧈",
+  },
+  {
+    title: "Soy sauce",
+    category: "Fridge",
+    id: 19,
+    img: "🧂",
+  },
 ];
-
 export default foodData;

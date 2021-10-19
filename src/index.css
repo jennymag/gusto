@@ -91,12 +91,16 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
 }
 
-.html {
+.html50 {
   width: 60%;
+  background-color: #50da0f;
+}
+.html100 {
+  width: 100%;
   background-color: #50da0f;
 }
 
@@ -332,4 +336,117 @@ button {
 
 .scan {
   width: 5%;
+}
+
+.matchSection {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 80px;
+  padding-top: 100px;
+}
+
+.matchH1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.matchP {
+  margin: 0;
+  color: gray;
+  font-weight: lighter;
+  font-size: 25px;
+  padding: 10px 0 30px 0;
+  text-align: center;
+}
+
+.skillbarContainer {
+  padding: 50px 0 40px 0;
+}
+
+.matchBtn {
+  width: 90%;
+}
+
+.recipeCard {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.1);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 0px 10px 10px 0px;
+}
+
+.recipeCard:hover {
+  box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.3);
+}
+
+.recipeBar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipeTitle {
+  padding: 10px;
+}
+
+.recipeTime,
+.recipePort,
+.recipeIngr {
+  margin: 10px;
+
+  color: #000;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.tagBar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipeTags {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: lighter;
+  font-size: 15px;
+  background: #fa4a0c;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  margin: 5px;
+  letter-spacing: 1px;
+  padding: 15px;
+  max-width: 70px;
+}
+
+.recipeInfoBar {
+  display: flex;
+  justify-content: center;
+  background: #fa4a0c;
+  border-radius: 30px;
+  padding: 30px 20px 20px 20px;
+  margin: 10px;
+}
+.recipeInfoBar p {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.recipeNav {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  color: #858585;
+  padding: 30px 0 30px 0;
+}
+
+.recipeImg {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.recipeContainer {
+  margin-left: 10px;
 }

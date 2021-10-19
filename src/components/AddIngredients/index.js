@@ -15,6 +15,7 @@ const AddIngredientsPage = () => {
   function searchIngredient(event) {
     setSearchTerm(event.target.value);
   }
+
   return (
     <OnboardingLayout>
       <header class="pantryHeader">
@@ -43,7 +44,7 @@ const AddIngredientsPage = () => {
             />
           ))}
 
-        <Link to={ROUTES.PANTRY}>
+        <Link to={ROUTES.MATCHMEWITHRECIPES}>
           <button>Done</button>
         </Link>
       </section>

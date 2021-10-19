@@ -1,7 +1,5 @@
 import React from "react";
-
 import { withAuthorization } from "../Session";
-
 import { Link } from "react-router-dom";
 import * as ROUTES from "../../constants/routes";
 import LogoCircle from "../Navigation/LogoCircle";
@@ -13,8 +11,8 @@ const OnboardingPage = () => (
     </header>
     <section className="landingSection">
       <p className="onboardingH1">Almost there!</p>
-      <div class="container">
-        <div class="skills html">50% Done</div>
+      <div className="container">
+        <div className="skills html50">50% Done</div>
       </div>
       <h1 className="onboardingH2">
         Add ingredients to your pantry to get started

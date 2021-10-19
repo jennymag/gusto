@@ -6,5 +6,7 @@ export const ACCOUNT = "/account";
 export const ADMIN = "/admin";
 export const PASSWORD_FORGET = "/pw-forget";
 export const ONBOARDING = "/onboarding";
+export const MATCHMEWITHRECIPES = "/matchmewithrecipes";
 export const PANTRY = "/pantry";
 export const ADD_INGREDIENTS = "/pantry/add-ingredients";
+export const COOKINGPAGE = "/home/:title";

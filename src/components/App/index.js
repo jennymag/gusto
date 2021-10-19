@@ -8,8 +8,10 @@ import HomePage from "../Home";
 import AccountPage from "../Account";
 import AdminPage from "../Admin";
 import PantryPage from "../Pantry";
+import CookingPage from "../Home/CookingPage";
 import AddIngredientsPage from "../AddIngredients";
 import OnboardingPage from "../Onboarding";
+import MatchMeWithRecipesPage from "../MatchMeWithRecipes";
 import * as ROUTES from "../../constants/routes";
 import { withAuthentication } from "../Session";
 import { PantryContext } from "./PantryContext";
@@ -19,7 +21,7 @@ const App = () => {
   function createTogglePantryStatus(id) {
     return (e) => {
       if (pantry.includes(id)) {
-        setPantry(pantry.filter((i) => i != id));
+        setPantry(pantry.filter((i) => i !== id));
       } else {
         setPantry([...pantry, id]);
       }
@@ -36,12 +38,18 @@ const App = () => {
           <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
           <Route path={ROUTES.SIGN_IN} component={SignInPage} />
           <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
+          <Route path={ROUTES.COOKINGPAGE} component={CookingPage} />
           <Route path={ROUTES.HOME} component={HomePage} />
+
           <Route path={ROUTES.ACCOUNT} component={AccountPage} />
           <Route path={ROUTES.ADMIN} component={AdminPage} />
           <Route path={ROUTES.ONBOARDING} component={OnboardingPage} />
           <Route path={ROUTES.ADD_INGREDIENTS} component={AddIngredientsPage} />
           <Route path={ROUTES.PANTRY} component={PantryPage} />
+          <Route
+            path={ROUTES.MATCHMEWITHRECIPES}
+            component={MatchMeWithRecipesPage}
+          />
         </Switch>
       </Router>
     </PantryContext.Provider>
