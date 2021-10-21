@@ -76,6 +76,7 @@ const PantryPage = () => {
         {filteredFood.map((food) =>
           pantry.includes(food.id) ? (
             <FoodCard
+              key={food.id}
               food={food}
               inPantry={pantry.includes(food.id)}
               togglePantryStatus={createTogglePantryStatus(food.id)}

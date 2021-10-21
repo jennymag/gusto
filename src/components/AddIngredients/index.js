@@ -18,7 +18,7 @@ const AddIngredientsPage = () => {
 
   return (
     <OnboardingLayout>
-      <header class="pantryHeader">
+      <header className="pantryHeader">
         <LogoCircle />
       </header>
       <h1 className="pantryH1">Add ingredients</h1>
@@ -38,6 +38,7 @@ const AddIngredientsPage = () => {
           )
           .map((food) => (
             <FoodCard
+              key={food.id}
               food={food}
               inPantry={pantry.includes(food.id)}
               togglePantryStatus={createTogglePantryStatus(food.id)}

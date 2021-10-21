@@ -378,7 +378,7 @@ button {
 }
 
 .recipeCard:hover {
-  box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.3);
+  box-shadow: 0px 30px 60px rgba(57, 57, 57, 0.5);
 }
 
 .recipeBar {
@@ -449,4 +449,46 @@ button {
 
 .recipeContainer {
   margin-left: 10px;
+}
+.recipeH1 {
+  margin: 20px;
+}
+
+.filterContainer {
+  background: transparent;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.cookingImgContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cookingImg {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.cookingP {
+  color: black;
+  font-size: 20px;
+  padding: 21px;
+  font-weight: lighter;
+}
+
+.cookingH2 {
+  padding: 20px 10px 10px 45px;
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cookingContainer {
+  padding-bottom: 100px;
 }

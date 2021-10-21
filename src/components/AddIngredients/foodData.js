@@ -113,5 +113,35 @@ const foodData = [
     id: 19,
     img: "🧂",
   },
+  {
+    title: "Milk",
+    category: "Fridge",
+    id: 20,
+    img: "🍶",
+  },
+  {
+    title: "Wheat flour",
+    category: "Dry foods",
+    id: 21,
+    img: "🌾",
+  },
+  {
+    title: "Jam",
+    category: "Fridge",
+    id: 22,
+    img: "🍓",
+  },
+  {
+    title: "Yoghurt",
+    category: "Fridge",
+    id: 23,
+    img: "🍶",
+  },
+  {
+    title: "Clementine",
+    category: "Dry foods",
+    id: 24,
+    img: "🍊",
+  },
 ];
 export default foodData;

@@ -17,7 +17,7 @@ import { withAuthentication } from "../Session";
 import { PantryContext } from "./PantryContext";
 
 const App = () => {
-  const [pantry, setPantry] = useState([]);
+  const [pantry, setPantry] = useState([16, 17, 18]);
   function createTogglePantryStatus(id) {
     return (e) => {
       if (pantry.includes(id)) {

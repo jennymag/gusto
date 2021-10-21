@@ -4,19 +4,19 @@ import beefstew from "../../pictures/photo-1608500218861-01091cdc501e.jpeg";
 const recipeData = [
   {
     title: "Pancakes",
-    time: "120 min",
+    time: "45",
     port: "4",
     id: 1,
     img: pancake,
-    pantry: ["Wheat flour", "Salt", "Pepper", "Milk", "Eggs", "Butter", "Jam"],
+    ingredients: [18, 5, 12, 20, 21],
     about: {
-      ingredients: [
-        "2 1/2 dl wheat flour",
-        "1/2 tsk salt",
-        "6 dl milk",
-        "3 eggs",
-        "butter for frying",
-        "jam, berries or fruit for serving",
+      amountAndIngredients: [
+        { food: "Wheat flour", id: 21, am: "2 1/2 dl" },
+        { food: "Salt", id: 12, am: "1/2 tsk" },
+        { food: "Milk", id: 20, am: "6 dl" },
+        { food: "Eggs", id: 5, am: "3" },
+        { food: "Butter", id: 18, am: "(For frying)" },
+        { food: "Jam", id: 22, am: "(For serving)" },
       ],
       doLikeThis: [
         "1. Blend flour and salt in a bowl. Whisk half of the milk until it becomes a smooth batter. Then add the last milk and the eggs and whisk.",
@@ -31,36 +31,24 @@ const recipeData = [
   },
   {
     title: "Beef in creamy mushroom sauce",
-    time: "45 min",
+    time: "40",
     port: "4",
     id: 2,
     img: beefstew,
-    pantry: [
-      "Potato",
-      "Mushroom",
-      "Beef",
-      "Oil",
-      "Garlic",
-      "Salt",
-      "Pepper",
-      "Corn starch",
-      "Cooking cream",
-      "Soy sauce",
-      "Chicken broth",
-    ],
+    ingredients: [8, 9, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18],
     about: {
-      ingredients: [
-        "900g potato",
-        "250g mushroom",
-        "600g beef",
-        "2 msk oil",
-        "1 clove of garlic",
-        "salt",
-        "pepper",
-        "1 msk corn starch",
-        "2 1/2 dl cooking cream",
-        "1 msk soy sauce",
-        "2 1/2 dl chicken broth",
+      amountAndIngredients: [
+        { food: "Potato", id: 8, am: "900g" },
+        { food: "Mushroom", id: 9, am: "250g" },
+        { food: "Beef", id: 7, am: "600g" },
+        { food: "Oil", id: 10, am: "2 msk" },
+        { food: "Garlic", id: 11, am: "1 Clove of" },
+        { food: "Salt", id: 12, am: "" },
+        { food: "Pepper", id: 13, am: "" },
+        { food: "Corn starch", id: 14, am: "1 msk" },
+        { food: "Cooking cream", id: 15, am: "2 1/2 dl" },
+        { food: "Soy sauce", id: 19, am: "1 msk" },
+        { food: "Chicken broth", id: 24, am: "2 1/2 dl" },
       ],
       doLikeThis: [
         "1. Peel and boil the potatos",
@@ -75,16 +63,16 @@ const recipeData = [
   },
   {
     title: "Frozen yoghurt clementine",
-    time: "60 min",
+    time: "60",
     port: "4",
     id: 3,
     img: frozenyoghurt,
-    pantry: ["Clementine", "Yoghurt", "Cocunut"],
+    ingredients: [24, 23, 16],
     about: {
-      ingredients: [
-        "1 clementine",
-        "1/2 dl natural yoghurt",
-        "1 tsk shredded coconut",
+      amountAndIngredients: [
+        { food: "Clementine", id: 24, am: "1" },
+        { food: "Yoghurt", id: 23, am: "1/2 dl" },
+        { food: "Shredded coconut", id: 16, am: "1 tsk" },
       ],
       doLikeThis: [
         "1. Peel the clementine and separate it",
