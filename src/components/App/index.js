@@ -15,9 +15,11 @@ import MatchMeWithRecipesPage from "../MatchMeWithRecipes";
 import * as ROUTES from "../../constants/routes";
 import { withAuthentication } from "../Session";
 import { PantryContext } from "./PantryContext";
+import AboutPage from "../Account/About";
+import ContactPage from "../Account/Contact";
 
 const App = () => {
-  const [pantry, setPantry] = useState([16, 17, 18]);
+  const [pantry, setPantry] = useState([]);
   function createTogglePantryStatus(id) {
     return (e) => {
       if (pantry.includes(id)) {
@@ -40,7 +42,8 @@ const App = () => {
           <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
           <Route path={ROUTES.COOKINGPAGE} component={CookingPage} />
           <Route path={ROUTES.HOME} component={HomePage} />
-
+          <Route path={ROUTES.CONTACT} component={ContactPage} />
+          <Route path={ROUTES.ABOUT} component={AboutPage} />
           <Route path={ROUTES.ACCOUNT} component={AccountPage} />
           <Route path={ROUTES.ADMIN} component={AdminPage} />
           <Route path={ROUTES.ONBOARDING} component={OnboardingPage} />

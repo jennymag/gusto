@@ -31,9 +31,6 @@ const CookingPage = () => {
   return (
     <OnboardingLayout>
       <div>
-        <header className="pantryHeader">
-          <LogoCircle />
-        </header>
         <h1 className="pantryH1">{found.title}</h1>
         <div className="cookingImgContainer">
           <img src={found.img} alt={found.title} className="cookingImg" />

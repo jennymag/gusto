@@ -34,16 +34,13 @@ const PantryPage = () => {
   );
   return (
     <OnboardingLayout>
-      <header class="pantryHeader">
-        <LogoCircle />
-      </header>
       <h1 className="pantryH1">Pantry</h1>
       <input
         onClick={searchForIngredients}
         className="searchField"
         placeholder="Search ingredients to add"
       />
-      <img src={scan} className="scan" alt="scan barcode" />
+
       <nav className="categoryNav">
         <ul className="categoryList">
           <li
@@ -85,8 +82,7 @@ const PantryPage = () => {
         )}
         {pantry.length === 0 ? (
           <p class="pantryP">
-            Your pantry is empty. Add ingredients by searching or scanning it's
-            barcode.
+            Your pantry is empty. Add ingredients by searching for them.
           </p>
         ) : null}
       </section>

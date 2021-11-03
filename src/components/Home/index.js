@@ -30,11 +30,6 @@ const HomePage = () => {
 
   return (
     <OnboardingLayout>
-      <header className="pantryHeader">
-        <div className="filterContainer">
-          <img src={filter} alt="filter" className="logo" />
-        </div>
-      </header>
       <h1 className="pantryH1">Recipes</h1>
       <input
         onChange={searchIngredient}
