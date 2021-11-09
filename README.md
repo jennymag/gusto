@@ -1,4 +1,4 @@
-# Gusto -
+# Gusto 
 
 Match tasty recipes with what you have in your pantry!
 
