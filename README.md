@@ -2,11 +2,11 @@
 
 Match tasty recipes with what you have in your pantry!
 
-![My pantry](/src/pictures/home.jpg)
+![My pantry](src/pictures/home.png)
 
-![My pantry - Add ingredients](https://myoctocat.com/assets/images/base-octocat.svg)
+![My pantry - Add ingredients](src/pictures/pantry.png)
 
-![Recipes - Home](https://myoctocat.com/assets/images/base-octocat.svg)
+![Recipes - Home](src/pictures/add ingr.png)
 
 ## Save food
 
