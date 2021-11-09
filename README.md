@@ -6,7 +6,7 @@ Match tasty recipes with what you have in your pantry!
 
 ![My pantry - Add ingredients](src/pictures/pantry.png)
 
-![Recipes - Home](src/pictures/add ingr.png)
+![Recipes - Home](https://github.com/jennymag/gusto/blob/main/src/pictures/add%20ingr.png)
 
 ## Save food
 
