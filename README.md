@@ -2,7 +2,7 @@
 
 Match tasty recipes with what you have in your pantry!
 
-![Recipes - Home](https://github.com/jennymag/gusto/blob/main/src/pictures/add%20ingr.png)
+![Recipes - Home](src/pictures/home.png)
 
 ## Save food
 
@@ -16,4 +16,4 @@ Gusto helps you to save money by making it easy to prepare meals based on what y
 
 Tired of going to the grocery store every day? Save time by using Gustos smart recipes
 
-![My pantry - Add ingredients](src/pictures/pantry.png)
+![My pantry - Add ingredients](https://github.com/jennymag/gusto/blob/main/src/pictures/add%20ingr.png)
